@@ -14,8 +14,7 @@ exports.run = async (client, message, args) => {
         .addField("Users", `${client.users.size}\n**API Users**: ${api.users}`)
         .addBlankField(true)
         .setURL(`${config.cdn}:1234/api`)
-        .addField("Main Server", config.cdn)
-        .addField("API Server", `${config.cdn}:1234/api`)
+        
         .setThumbnail(client.user.avatarURL)
 
         .setFooter(`Server IP: ${servers[message.guild.id].ip}`, client.user.avatarURL)
